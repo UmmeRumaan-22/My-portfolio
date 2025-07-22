@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #eaf8fa;
+  color: #02151b;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #eef3e3, #254a53);
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #193a4c;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #0f333d;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* About */
+#about p {
+  font-size: 1.05rem;
+  background: #fff;
+  padding: 1.2rem;
+  border-left: 5px solid #525b1c;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background-color: #fff;
+  padding: 1.2rem;
+  border-left: 5px solid #282448;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h3 {
+  color: #282448;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-card li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+/* Projects */
+.project {
+  background-color: #fff;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #525b1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.project h3 {
+  color: #525b1c;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact */
+#contact p {
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.7rem;
+  border-left: 4px solid #9def67;
+  border-radius: 6px;
+  word-break: break-word;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #eee;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+}
+
+/* Responsive Text */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+}
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Umme Rumaan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am an engineering graduate in Electrical and Electronics with an overall CGPA of 8.3.Along with my degree I am skilled in web development technologies such as HTML, CSS, and JavaScript, along with strong knowledge of Core Java, JDBC, Hibernate, SQL, and the Spring Framework. I am eager to apply my skills in a practical environment and contribute meaningfully to the organization I work with.</p>
+    </section>
+
+    <section id="skills">
+        <div class="skills">
+          <h2>Technical Stack</h2>
+          <ul>
+            <li>Language: Java</li>
+            <li>Framework: Spring Boot, JDBC</li>
+            <li>Web Technology: Html, CSS, JavaScript</li>
+            <li>Database: MySQL</li>
+            <li>Build Tools: Maven</li>
+            <li>Application Server: Tomcat</li>
+            <li>IDEs: Eclipse</li>
+            <li>RESTful APIs: JSON, CURL, Postman</li>
+          </ul>
+        </div>
+      </section>
+      
+
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A personal website to showcase my skills and projects using only HTML and CSS.</p>
+      </div>
+      <div class="project">
+        <h3>Stripe Payment Integration</h3>
+        <p>Developed a secure and modular payment system using Stripe, integrated with a Spring Boot microservices architecture on AWS. Implemented Stripe APIs, used JDBC with MySQL for data handling, and optimized performance. Followed REST API standards, applied design patterns for clean code. Demonstrated strong debugging and problem-solving skills throughout the project.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Phone: 8904817978</p>
+      <p>Email: ummerumaan486@gmail.com</p>
+      <p>LinkedIn:<a href="https://www.linkedin.com/in/umme-rumaan-39102b286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Umme Rumaan</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Umme Rumaan. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
