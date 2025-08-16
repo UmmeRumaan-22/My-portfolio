@@ -72,7 +72,7 @@ h2 {
 /* About */
 #about p {
   font-size: 1.05rem;
-  background: #fff;
+  /* background: #fff; */
   padding: 1.2rem;
   border-left: 5px solid #525b1c;
   border-radius: 8px;
@@ -80,6 +80,15 @@ h2 {
 }
 
 /* Skills */
+
+.skills{
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #525b1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -88,6 +97,7 @@ h2 {
 
 .skill-card {
   background-color: #fff;
+  background: #fff;
   padding: 1.2rem;
   border-left: 5px solid #282448;
   border-radius: 8px;
@@ -114,9 +124,26 @@ h2 {
   font-size: 0.95rem;
 }
 
+/* internship */
+.internship {
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #525b1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* educatin */
+.education {
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #525b1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
 /* Projects */
 .project {
-  background-color: #fff;
   padding: 1.2rem;
   margin-bottom: 1rem;
   border-left: 5px solid #525b1c;
@@ -130,11 +157,11 @@ h2 {
 }
 
 /* Contact */
-#contact p {
-  background-color: #fff;
+.contact  {
+  /* background-color: #fff; */
   padding: 0.75rem 1rem;
   margin-bottom: 0.7rem;
-  border-left: 4px solid #9def67;
+  border-left: 4px solid #525b1c;
   border-radius: 6px;
   word-break: break-word;
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
@@ -170,8 +197,10 @@ footer {
     <h1>Umme Rumaan</h1>
     <nav>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+      <a href="#Education">Education</a>
+      <a href="#internship">Internship</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -179,12 +208,56 @@ footer {
   <div class="container">
     <section id="about">
       <h2>About Me</h2>
-      <p>I am an engineering graduate in Electrical and Electronics with an overall CGPA of 8.3.Along with my degree I am skilled in web development technologies such as HTML, CSS, and JavaScript, along with strong knowledge of Core Java, JDBC, Hibernate, SQL, and the Spring Framework. I am eager to apply my skills in a practical environment and contribute meaningfully to the organization I work with.</p>
+      <p>Engineering graduate in Electrical and Electronics Engineering with strong skills in Java Full Stack Development, including Spring Boot, REST APIs, and microservices. Experienced in Stripe payment integration, backend development, and AWS deployment. Quick learner, adaptable, and committed to delivering high-quality, scalable software solutions.</p>
     </section>
 
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education">
+      <p>Bachelor of Engineering (B.E.)-Electrical & Electronics(2019-2023)</p>
+      <p>SJM Institute of Technology, Chitradurga</p>
+      <p>GPA: 8.3 / 10</p>
+      </div>
+    </section>
+
+    <section id="internship">
+      <h2>Internship Experience</h2>
+      <div class="internship">
+      <p>Java Developer Intern – HulkHire Tech (Jul 2024 – Aug 2024)</p>
+      <ul>
+        <li>Developed a core payment processing system using Spring Boot and microservices architecture.</li>
+        <li>Integrated Stripe API for payment handling, notifications, and status management.</li>
+        <li>Designed and implemented REST APIs following industry best practices.</li>
+        <li>Built an error handling and logging system to improve application stability.</li>
+        <li>Used Spring Boot with JDBC and MySQL for backend development.</li>
+        <li>Deployed the application on AWS for scalability and performance.</li>
+        <li>Debugged and resolved technical issues, improving integration success rate.</li>
+      </ul>
+      </div>
+    </section>
+      
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A personal website to showcase my skills and projects using only HTML and CSS.</p>
+      </div>
+      <div class="project">
+        <h3>Stripe Payment Integration</h3>
+       <ul>
+        <li>Created an end-to-end payment processing system with Stripe API.</li>
+        <li>Implemented payment status management and notification handling.</li>
+        <li>Designed modular architecture for scalability and maintainability.</li>
+       </ul>
+      </div>
+    </section>
+
+
     <section id="skills">
+       <h2>Technical SKills</h2>
         <div class="skills">
-          <h2>Technical Stack</h2>
+         
           <ul>
             <li>Language: Java</li>
             <li>Framework: Spring Boot, JDBC</li>
@@ -197,26 +270,14 @@ footer {
           </ul>
         </div>
       </section>
-      
-
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>A personal website to showcase my skills and projects using only HTML and CSS.</p>
-      </div>
-      <div class="project">
-        <h3>Stripe Payment Integration</h3>
-        <p>Developed a secure and modular payment system using Stripe, integrated with a Spring Boot microservices architecture on AWS. Implemented Stripe APIs, used JDBC with MySQL for data handling, and optimized performance. Followed REST API standards, applied design patterns for clean code. Demonstrated strong debugging and problem-solving skills throughout the project.</p>
-      </div>
-    </section>
 
     <section id="contact">
       <h2>Contact</h2>
+      <div class="contact">
       <p>Phone: 8904817978</p>
       <p>Email: ummerumaan486@gmail.com</p>
       <p>LinkedIn:<a href="https://www.linkedin.com/in/umme-rumaan-39102b286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Umme Rumaan</a></p>
+      </div>
     </section>
   </div>
 
